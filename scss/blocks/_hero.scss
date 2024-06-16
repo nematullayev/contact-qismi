@@ -1,0 +1,65 @@
+.hero {
+  display: flex;
+  gap: 64px;
+  padding: 40px 80px;
+  border-top: 1px solid rgb(237, 237, 237);
+  border-left: 1px solid rgb(237, 237, 237);
+  border-bottom: 1px solid rgb(237, 237, 237);
+  border-right: 1px solid rgb(237, 237, 237);
+  border-radius: 25px;
+  margin-bottom: 67px;
+  &__one {
+    padding-right: 105px;
+    border-right: 1px solid #d7d7dd;
+  }
+  &__one-title {
+    width: 228px;
+    padding-top: 24px;
+  }
+  &__img {
+    width: 68px;
+  }
+  &__one-text {
+    width: 225px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 14px;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .hero {
+    flex-direction: column;
+    gap: 30px;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+  }
+  .hero__img {
+    width: 100%;
+  }
+  .hero__one,
+  .hero__one-1 {
+    display: flex;
+    gap: 30px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+    padding-right: 32px;
+    align-items: center;
+    border-top: 1px solid rgb(237, 237, 237);
+    border-left: 1px solid rgb(237, 237, 237);
+    border-bottom: 1px solid rgb(237, 237, 237);
+    border-right: 1px solid rgb(237, 237, 237);
+    border-radius: 25px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hero__one-title {
+    max-width: 218px;
+  }
+  .hero__one-text {
+    max-width: 218px;
+  }
+}
